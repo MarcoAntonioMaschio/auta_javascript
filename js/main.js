@@ -1,3 +1,63 @@
+function clicou(){
+  document.getElementById("Agradecimento").innerHTML = "<b>Obrigado por Clicar!!!</b>";
+
+  console.log(document.getElementById("Agradecimento"));
+  //alert("Obrigado por Clicar");
+}
+
+function redirecionar(){
+  window.open("http://www.terra.com.br/");
+  window.location.href = "http://www.google.com.br/"
+}
+
+function trocar(elemento){
+  //document.getElementById("mousemove").innerHTML = "Obrigado por Passar  Mouse";
+  elemento.innerHTML = "Obrigado por Passar  Mouse";
+}
+
+function voltar(elemento){
+  //document.getElementById("mousemove").innerHTML = "Pause o Mouse Aqui";
+  elemento.innerHTML = "Pause o Mouse Aqui";
+}
+
+function load(){
+  alert("Pagina Carregada!");
+}
+
+function FuncaoChange(elemento){
+  console.log(elemento.value);
+}
+
+/*
+function soma(n1,n2){
+  return n1 + n2;
+}
+
+
+function validaIdade(idade){
+  var validar;
+  if (idade >= 18){
+    validar = true;
+  }  
+  else{
+    validar = false;
+  }
+  return validar;
+}
+function setReplace(frase, nome, novo_nome){
+  return frase.replace(nome, novo_nome);
+}
+
+var idade = prompt("Qual a sua idade:");
+console.log(validaIdade(idade));
+
+
+
+alert(soma(5,10));
+alert(setReplace("Vai Japão", "Japão", "Brasil"));
+
+
+
 var d = new Date();
 
 alert(d.getMinutes());
@@ -7,7 +67,7 @@ alert(d.getDate());
 
 
 
-/*
+
 var count;
 
 for (count = 3; count <=5; count++){
